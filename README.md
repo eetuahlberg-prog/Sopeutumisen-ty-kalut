@@ -65,3 +65,4 @@ Jos nykyisiin kahteen erilliseen GitHub Pages -sivustoon on jo jaettu linkkejä,
 Yhdistetyn sivuston kolme sivupolkua ja 18 HTML-linkki-/resurssiviitettä tarkistettiin paikallisella HTTP-palvelimella. Kuntien ja yritysten alkuperäiset JavaScript- ja aineistotiedostot varmistettiin muuttumattomiksi, ja yritystyökalun mukana olevat Node.js-testit läpäisivät tarkistukset. Varsinainen graafinen Chromium-selaintestaus estyi testiympäristön käyttörajoituksiin. Tarkista ulkoasu, mobiilikäyttö ja vientitoiminnot julkaistulla GitHub Pages -sivustolla. GitHub Pages -julkaisu on testattava käyttäjän omassa repositoriossa. Yritystyökalun alkuperäiset testit sijaitsevat `yritys/research/`-kansiossa: `node research/check.mjs` ja `node research/check-exports.mjs`, suoritettuna `yritys`-kansiossa.
 
 Työkalut ovat valmistelu- ja keskustelutukea, eivät sertifioituja ilmastoriskien arviointijärjestelmiä.
+12.10.2026
