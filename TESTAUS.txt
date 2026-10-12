@@ -1,0 +1,12 @@
+Sopeutumisen työkalut – testaus
+
+Tarkista julkaisun jälkeen:
+1. Koko sivuston aloitussivu aukeaa ja näyttää metsäkuvan sekä Pohjois-Karjalan,
+   Ilmastovision ja Euroopan unionin tunnukset.
+2. "Kunnille" avaa polun /kunta/.
+3. "Yrityksille" avaa polun /yritys/.
+4. Molemmista työkaluista pääsee takaisin valintasivulle.
+5. Kuntien esimerkkikunnan kokeilu, toimenpiteet ja suunnitelman tulostus toimivat.
+6. Yritysten demo, riippuvuusvalinnat, suunnitelman tulostus ja Excel-vienti toimivat.
+7. Mobiilissa ei synny vaakasuuntaista vieritystä.
+8. Tallenna keskeneräinen arvio ennen poistumista: vastauksia ei tallenneta pysyvästi.

@@ -1,0 +1,118 @@
+:root {
+  --red: #e4003a;
+  --red-dark: #a5002b;
+  --ink: #1f2523;
+  --focus: #005d76;
+  --muted: #515a56;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 300px; color: var(--ink); background: #f8f8f6; font: 1rem/1.55 Ubuntu, "Segoe UI", Arial, sans-serif; }
+a { color: var(--red-dark); text-underline-offset: 4px; }
+a:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.skip-link { position: absolute; left: 16px; top: -120px; z-index: 20; padding: 13px 17px; color: var(--ink); background: #fff; font-weight: 700; }
+.skip-link:focus { top: 16px; }
+
+/* Punainen ylapalkki: alkuperaiset Pohjois-Karjalan ja EU:n valkoiset tunnukset,
+   Ilmastovision punainen tunnus omalla valkoisella pohjallaan. */
+.masthead { background: var(--red); border-bottom: 5px solid #fff; }
+.masthead-inner { max-width: 1220px; min-height: 112px; margin: 0 auto; padding: 14px 34px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+.pk-logo { display: block; width: clamp(170px, 20vw, 235px); height: auto; flex: 0 1 auto; }
+.partners { display: flex; align-items: center; gap: clamp(18px, 3vw, 36px); }
+.vision-logo-box { background: #fff; border-radius: 3px; min-width: 185px; height: 65px; padding: 12px 16px; display: flex; align-items: center; justify-content: center; }
+.vision-logo { display: block; width: 177px; max-width: 100%; height: auto; object-fit: contain; }
+.eu-logo { display: block; flex-shrink: 0; width: 74px; height: auto; }
+
+/* Metsakuva koko aloitusnakymaan; tumma kerros varmistaa tekstin erottumisen. */
+.hero {
+  background-color: #253a2e;
+  background-image: linear-gradient(90deg, rgba(8, 21, 17, .87) 0%, rgba(9, 25, 20, .72) 50%, rgba(9, 21, 17, .54) 100%), url("./assets/metsa.jpg");
+  background-position: center, center 51%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  min-height: 695px;
+  display: flex;
+  align-items: center;
+}
+.hero-content { width: min(100%, 1220px); margin: 0 auto; padding: 66px 34px 58px; }
+.eyebrow { display: flex; align-items: center; gap: 12px; margin: 0 0 16px; color: #f6f6f6; font-size: .79rem; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; }
+.eyebrow-line { display: inline-block; width: 26px; height: 3px; background: var(--red); }
+h1 { max-width: 1000px; margin: 0 0 21px; font-size: clamp(2.8rem, 5.4vw, 4.7rem); font-weight: 700; line-height: 1.06; letter-spacing: -2.2px; text-wrap: balance; }
+.lead { margin: 0; max-width: 980px; color: #f6f7f4; font-size: clamp(1rem, 1.5vw, 1.22rem); line-height: 1.65; text-wrap: pretty; }
+.tool-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 43px; }
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 260px;
+  padding: 25px 30px 0;
+  background: rgba(255, 255, 255, .97);
+  color: var(--ink);
+  border-radius: 4px;
+  border-top: 5px solid var(--red);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .15);
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+}
+.tool-card:hover { transform: translateY(-3px); background: #fff; box-shadow: 0 16px 32px rgba(0,0,0,.22); }
+.tool-card:focus-visible { outline: 4px solid #fff; outline-offset: 4px; }
+.card-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.card-kind { color: var(--red-dark); font-size: .74rem; font-weight: 700; letter-spacing: 1.5px; }
+.card-icon { display: inline-flex; width: 48px; height: 48px; color: var(--red-dark); }
+.card-icon svg { display: block; width: 100%; height: 100%; }
+.tool-card h2 { margin: 1px 0 9px; font-size: clamp(1.75rem, 2.7vw, 2.1rem); letter-spacing: -.6px; line-height: 1.15; }
+.tool-card p { max-width: 470px; margin: 0 0 24px; color: #414b46; font-size: .99rem; line-height: 1.55; }
+.card-action { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: auto; padding: 13px 0 15px; border-top: 1px solid #e4e6e4; color: var(--red-dark); font-weight: 700; font-size: .96rem; }
+.arrow { font-size: 1.5rem; line-height: 1; }
+.note { margin: 23px 0 0; color: #f7f7f7; max-width: 1010px; font-size: .83rem; line-height: 1.65; }
+
+/* Valkoinen alareuna ja punainen rajaus. */
+.site-footer { background: #fff; border-top: 6px solid var(--red); }
+.footer-inner { max-width: 1220px; margin: 0 auto; padding: 30px 34px 32px; display: flex; align-items: end; justify-content: space-between; gap: 36px; }
+.funding { max-width: 805px; }
+.funding-label { margin: 0 0 5px; color: var(--red-dark); font-size: .73rem; font-weight: 700; letter-spacing: 1.4px; }
+.funding p:last-child { margin: 0; color: #414641; font-size: .9rem; line-height: 1.5; }
+.footer-inner a { flex-shrink: 0; font-size: .89rem; font-weight: 700; }
+
+@media (max-width: 830px) {
+  .masthead-inner { padding: 13px 24px; min-height: 105px; }
+  .hero { min-height: 0; }
+  .hero-content { padding: 65px 24px 55px; }
+  .tool-card { padding: 20px 21px 0; }
+  .footer-inner { padding: 25px 24px; display: block; }
+  .footer-inner a { display: inline-block; margin-top: 15px; }
+}
+@media (max-width: 620px) {
+  .masthead-inner { padding: 12px 18px; min-height: 0; flex-wrap: wrap; gap: 14px; }
+  .pk-logo { width: 190px; max-width: calc(100vw - 36px); }
+  .partners { margin-left: auto; gap: 15px; }
+  .vision-logo-box { min-width: 140px; width: 140px; height: 54px; padding: 11px 12px; }
+  .vision-logo { width: 130px; }
+  .eu-logo { width: 57px; }
+  .hero { background-position: center, 53% center; }
+  .hero-content { padding: 47px 18px 45px; }
+  .eyebrow { font-size: .69rem; letter-spacing: 1.1px; }
+  h1 { font-size: clamp(2.4rem, 9vw, 3.6rem); letter-spacing: -1.2px; }
+  .lead { font-size: 1.02rem; line-height: 1.57; }
+  .tool-grid { grid-template-columns: 1fr; margin-top: 31px; gap: 14px; }
+  .tool-card { min-height: 225px; }
+  .card-icon { width: 43px; height: 43px; }
+  .tool-card h2 { font-size: 1.8rem; }
+  .tool-card p { font-size: .97rem; margin-bottom: 19px; }
+  .note { margin-top: 19px; }
+  .footer-inner { padding: 22px 18px 26px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .tool-card { transition: none; }
+}
+@media (forced-colors: active) {
+  .tool-card { border: 2px solid CanvasText; }
+  .tool-card:focus-visible { outline: 3px solid Highlight; }
+}
+@media print {
+  .hero { background: #fff; color: #111; min-height: 0; }
+  .lead, .eyebrow, .note { color: #111; }
+  .tool-card { border: 1px solid #555; border-top: 5px solid #e4003a; box-shadow: none; break-inside: avoid; }
+  .masthead, .site-footer { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+}
