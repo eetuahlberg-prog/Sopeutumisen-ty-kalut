@@ -1,6 +1,6 @@
 window.MODEL = {
-  "version": "1.1",
-  "date": "2026-09-11",
+  "version": "1.2",
+  "date": "2026-10-12",
   "sources": {
     "PK": {
       "title": "Pohjois-Karjalan sopeutumisen tiekartta (2025)",

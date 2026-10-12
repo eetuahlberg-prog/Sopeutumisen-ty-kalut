@@ -1,0 +1,56 @@
+/* Molempien työkalujen identtinen punainen ylätunniste.
+   Sama rakenne, korkeus, logoasettelu ja mobiilisäännöt. */
+.masthead { background:#e4003a; color:#fff; }
+.mastinner {
+  max-width:1480px; min-height:160px; margin:0 auto;
+  padding:13px 4%; display:flex; align-items:center;
+  justify-content:space-between; gap:30px;
+}
+.identity { display:flex; align-items:center; gap:35px; min-width:0; }
+.identity > img { display:block; width:278px; max-width:32vw; height:auto; object-fit:contain; }
+.product { border-left:1px solid #ff7699; padding:7px 0 7px 30px; min-width:0; }
+.product a { color:#fff; display:block; text-decoration:none; font-size:1.625rem; font-weight:700; line-height:1.2; }
+.product span { display:block; margin-top:5px; font-size:.875rem; }
+.eu { display:block; width:116px; height:auto; flex-shrink:0; object-fit:contain; }
+
+/* Yrityksen arvio voidaan nollata mistä tahansa vaiheesta. */
+.suite-nav-actions { display:flex; align-items:center; justify-content:flex-end; gap:20px; flex-wrap:wrap; }
+.suite-reset {
+  background:#fff; border:1px solid #a5002b; border-radius:4px;
+  color:#a5002b; font:inherit; font-size:.88rem; font-weight:700;
+  padding:8px 14px; min-height:40px; cursor:pointer;
+}
+.suite-reset:hover { background:#fff2f5; }
+.suite-reset:focus-visible { outline:3px solid #005d76; outline-offset:3px; }
+
+/* Yhteinen viimeinen huomautus footerissa ja tulosteessa. */
+footer { flex-wrap:wrap; }
+.tool-disclaimer {
+  display:block; box-sizing:border-box; flex-basis:100%; grid-column:1/-1;
+  width:100%; max-width:none; margin:12px 0 0; padding:16px 0 0;
+  border-top:1px solid #d7d7d7; color:#444;
+  font-size:.82rem; line-height:1.6;
+}
+.tool-disclaimer strong { color:#303030; }
+.print-disclaimer { margin-top:18px; padding-top:10px; border-top:1px solid #bbb; font-size:.82rem; line-height:1.5; }
+@media(max-width:760px) {
+  .mastinner { min-height:164px; padding:14px 5%; gap:16px; flex-wrap:wrap; }
+  .identity { display:block; flex:1 1 180px; min-width:0; }
+  .identity > img { width:200px; max-width:100%; }
+  .product { border:0; padding:10px 0 0; }
+  .product a { font-size:1.4375rem; }
+  .product span { font-size:.8125rem; }
+  .eu { width:106px; }
+}
+@media(max-width:450px) {
+  .mastinner { min-height:178px; }
+  .identity { flex:1 1 140px; }
+  .eu { width:92px; }
+  .suite-nav-actions { margin-left:auto; }
+  .suite-reset { padding:8px 10px; }
+}
+@media print {
+  body > .masthead { display:none!important; }
+  .suite-nav { display:none!important; }
+  .print-disclaimer { break-inside:avoid; }
+}

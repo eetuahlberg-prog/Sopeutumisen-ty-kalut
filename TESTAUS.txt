@@ -10,3 +10,15 @@ Tarkista julkaisun jälkeen:
 6. Yritysten demo, riippuvuusvalinnat, suunnitelman tulostus ja Excel-vienti toimivat.
 7. Mobiilissa ei synny vaakasuuntaista vieritystä.
 8. Tallenna keskeneräinen arvio ennen poistumista: vastauksia ei tallenneta pysyvästi.
+9. EU-tunnus on aloitussivulla havaittavissa vähintään muiden tunnusten
+   veroisena (tarkista sekä leveä että kapea näyttö).
+10. Molempien työkalujen punaiset ylätunnisteet ovat yhtä korkeat.
+11. Yritystyökalussa vaihda toimialaa kahdesti: ehdotetut riippuvuudet
+    vaihtuvat, jos et ole muokannut niitä; omat muutokset säilyvät.
+12. Palauta toimialan ehdotukset painikkeesta ja varmista, että riippuvuudet
+    päivittyvät nykyistä toimialaa vastaaviksi.
+13. Paina ylärivin "Tyhjennä oma arvio" ja hyväksy vahvistus:
+    myös toimiala ja vastaukset palautuvat alkuun.
+14. Kuntatyökalussa näkyy nimi "Kuntien sopeutuminen" otsikossa ja alareunassa.
+15. Molempien työkalujen lopusta löytyy sama rahoituslauseke ja huomautus.
+16. Tarkista myös TXT-/Excel-/PDF-tulosteiden vastuuhuomautukset.

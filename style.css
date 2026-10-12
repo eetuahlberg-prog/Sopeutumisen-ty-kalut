@@ -16,12 +16,12 @@ a:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
 /* Punainen ylapalkki: alkuperaiset Pohjois-Karjalan ja EU:n valkoiset tunnukset,
    Ilmastovision punainen tunnus omalla valkoisella pohjallaan. */
 .masthead { background: var(--red); border-bottom: 5px solid #fff; }
-.masthead-inner { max-width: 1220px; min-height: 112px; margin: 0 auto; padding: 14px 34px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+.masthead-inner { max-width: 1220px; min-height: 148px; margin: 0 auto; padding: 14px 34px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
 .pk-logo { display: block; width: clamp(170px, 20vw, 235px); height: auto; flex: 0 1 auto; }
 .partners { display: flex; align-items: center; gap: clamp(18px, 3vw, 36px); }
 .vision-logo-box { background: #fff; border-radius: 3px; min-width: 185px; height: 65px; padding: 12px 16px; display: flex; align-items: center; justify-content: center; }
 .vision-logo { display: block; width: 177px; max-width: 100%; height: auto; object-fit: contain; }
-.eu-logo { display: block; flex-shrink: 0; width: 74px; height: auto; }
+.eu-logo { display: block; flex-shrink: 0; width: 122px; height: auto; }
 
 /* Metsakuva koko aloitusnakymaan; tumma kerros varmistaa tekstin erottumisen. */
 .hero {
@@ -88,7 +88,7 @@ h1 { max-width: 1000px; margin: 0 0 21px; font-size: clamp(2.8rem, 5.4vw, 4.7rem
   .partners { margin-left: auto; gap: 15px; }
   .vision-logo-box { min-width: 140px; width: 140px; height: 54px; padding: 11px 12px; }
   .vision-logo { width: 130px; }
-  .eu-logo { width: 57px; }
+  .eu-logo { width: 96px; }
   .hero { background-position: center, 53% center; }
   .hero-content { padding: 47px 18px 45px; }
   .eyebrow { font-size: .69rem; letter-spacing: 1.1px; }
