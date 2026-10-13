@@ -31,7 +31,7 @@ kunta/                        Kuntien työkalu (HTML, CSS, JS, aineisto)
 yritys/                       Yritysten työkalu (HTML, CSS, JS, aineisto, Excel-vienti)
 shared/tool-header.css         Molempien työkalujen yhteinen ylätunniste ja huomautustyylit
 shared/typography.css          Molempien työkalujen yhteiset fonttikoot
-yritys/theme.css               Yritysten vihreä väriteema
+yritys/theme.css               Yritysten sininen väriteema
 yritys/research/              Yritystyökalun lähdeaineisto ja testit
 GITHUB-JULKAISUOHJE.md        GitHub Pages -julkaisuohje
 TESTAUS.txt                   Julkaisun jälkeinen tarkistuslista
@@ -66,11 +66,11 @@ järjestelmäfonttia. Kuntien ja yritysten työkalut käyttävät samaa
 (leipäteksti, pääotsikot, väliotsikot, kysymystekstit ja valikot).
 
 - Kuntien työkalun pääväri: Pohjois-Karjalan punainen `#E4003A`.
-- Yritysten työkalun pääväri: vihreä `#ADB150`, RGB 173, 177, 80;
-  annettu painovärimääritys CMYK 40/20/80/0 ja PMS 618 C. Näyttökäytössä
+- Yritysten työkalun pääväri: sininen `#75C9DA`, RGB 117, 201, 218;
+  annettu painovärimääritys CMYK 55/0/15/0 ja PMS 630 C. Näyttökäytössä
   käytetään nimenomaan annettua RGB/HEX-arvoa.
 - Yritystyökalun pienissä teksteissä ja aktiivisissa valinnoissa käytetään
-  tummempaa vihreää, jotta tekstin ja käyttöliittymäelementtien kontrasti
+  tummempaa sinistä, jotta tekstin ja käyttöliittymäelementtien kontrasti
   säilyy. Yläpalkkien mitat ovat samat molemmissa työkaluissa.
 
 Yhteiset fonttikoot määritellään tiedostossa `shared/typography.css` ja

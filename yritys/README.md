@@ -33,5 +33,5 @@ Työkalu kuuluu yhteiseen Sopeutumisen työkalut -sivustoon. Ylätunnisteen mito
 ## Ulkoasu
 
 Fonttiperhe on **Corbel** (varafontit Segoe UI ja Arial). Fonttikoot
-tulevat yhteisestä `../shared/typography.css`-tiedostosta. Yritysten pääväri on vihreä `#ADB150` (RGB 173, 177, 80).
-Erillinen `theme.css` sisältää vihreän käyttöliittymäteeman.
+tulevat yhteisestä `../shared/typography.css`-tiedostosta. Yritysten pääväri on sininen `#75C9DA` (RGB 117, 201, 218).
+Erillinen `theme.css` sisältää sinisen käyttöliittymäteeman. Yläreunassa käytetään alkuperäisiä mustia Pohjois-Karjalan ja EU:n tunnuksia ilman erillisiä taustalaattoja.

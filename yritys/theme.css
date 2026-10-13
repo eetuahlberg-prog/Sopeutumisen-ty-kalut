@@ -1,67 +1,95 @@
-/*
- * Yritysten sopeutumisen vihreä pääväri.
- * Näyttöväri RGB 173, 177, 80 / #ADB150; CMYK 40,20,80,0; PMS 618 C.
- * Tummempi lisäsävy on luettavuuden vuoksi: vaalea brändivihreä ei ole
- * riittävän tumma pienten linkkitekstien väriksi valkoisella pohjalla.
- */
+/* Business adaptation tool: North Karelia brand blue.
+   RGB 117,201,218 = #75C9DA (CMYK 55/0/15/0, PMS 630 C).
+   The two logos are used as supplied, without added cards or frames.
+   This file is loaded last: its selectors intentionally override legacy styles.
+*/
 :root {
-  --red: #ADB150;            /* alkuperäisen CSS:n käyttämä pääväritoken */
-  --link: #455019;
-  --business-green: #ADB150;
-  --business-green-deep: #455019;
-  --business-green-ink: #20280E;
-  --business-green-tint: #F2F4DE;
-  --suite-header-bg: #ADB150;
-  --suite-header-text: #20280E;
-  --suite-header-divider: rgba(31, 41, 11, .42);
-  --suite-reset-border: #455019;
-  --suite-reset-hover: #F2F4DE;
+  --red: #75C9DA; /* The legacy primary-color token in style.css */
+  --link: #12556B;
+  --business-blue: #75C9DA;
+  --business-blue-deep: #12556B;
+  --business-blue-ink: #132D38;
+  --business-blue-tint: #E6F6FA;
+  --suite-header-bg: #75C9DA;
+  --suite-header-text: #101D24;
+  --suite-header-divider: rgba(0, 0, 0, .34);
+  --suite-reset-border: #12556B;
+  --suite-reset-hover: #E6F6FA;
 }
-/* Vaaleanvihreässä tunnistepalkissa alkuperäiset valkoiset logot
-   saavat tumman taustalaatan. Logon värejä ei muuteta. */
+
+/* The original, single-color header remains the same size and structure. */
+.masthead { background: #75C9DA; color: #101D24; }
+.masthead .product { border-left-color: rgba(0, 0, 0, .34); }
+.masthead .product a,
+.masthead .product span { color: #101D24; }
 .masthead .identity > img,
 .masthead .eu {
-  background: #455019;
-  border-radius: 3px;
-  padding: 9px;
-  box-sizing: border-box;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  object-fit: contain;
 }
-.masthead .product span { color: var(--suite-header-text); }
-.suite-nav-home { color: var(--business-green-deep); }
-.suite-reset { background: #fff; }
-.suite-reset:hover { background: var(--business-green-tint); }
-/* Painikkeet: vihreä tausta ja tumma teksti täyttävät kontrastivaatimuksen. */
+/* EU wordmark is horizontal; preserve the original aspect ratio. */
+.masthead .eu { width: 270px; height: auto; max-width: 35vw; }
+
+.suite-nav-home { color: var(--business-blue-deep); }
+.suite-reset {
+  background: #fff;
+  color: var(--business-blue-deep);
+  border: 1px solid var(--business-blue-deep);
+}
+.suite-reset:hover { background: var(--business-blue-tint); }
+
+/* Light brand blue is paired with dark type to retain readable contrast. */
 .primary {
-  background: var(--business-green);
-  border-color: var(--business-green);
-  color: var(--business-green-ink);
+  background: var(--business-blue);
+  border-color: var(--business-blue);
+  color: var(--business-blue-ink);
 }
-.secondary { color: var(--business-green-ink); }
-.check input { accent-color: var(--business-green-deep); }
+.secondary { color: var(--business-blue-ink); }
+.check input { accent-color: var(--business-blue-deep); }
 .check:has(input:checked) {
-  background: var(--business-green-tint);
-  border-color: var(--business-green-deep);
-  box-shadow: inset 0 0 0 1px var(--business-green-deep);
+  background: var(--business-blue-tint);
+  border-color: var(--business-blue-deep);
+  box-shadow: inset 0 0 0 1px var(--business-blue-deep);
 }
 .badge.act {
-  background: var(--business-green-tint);
-  color: var(--business-green-deep);
-  border-color: #7B8643;
+  background: var(--business-blue-tint);
+  color: var(--business-blue-deep);
+  border-color: #659FB0;
 }
 .selected {
-  background: var(--business-green-tint);
-  color: var(--business-green-deep);
-  border-color: var(--business-green-deep);
+  background: var(--business-blue-tint);
+  color: var(--business-blue-deep);
+  border-color: var(--business-blue-deep);
 }
 .filters button[aria-pressed="true"] {
-  background: var(--business-green-deep);
-  border-color: var(--business-green-deep);
+  background: var(--business-blue-deep);
+  border-color: var(--business-blue-deep);
   color: #fff;
 }
-.meter { color: var(--business-green-deep); }
-.meter::-webkit-progress-value { background: var(--business-green-deep); }
-.meter::-moz-progress-bar { background: var(--business-green-deep); }
-.report-credit img { background: var(--business-green-deep); }
+.meter { color: var(--business-blue-deep); }
+.meter::-webkit-progress-value { background: var(--business-blue-deep); }
+.meter::-moz-progress-bar { background: var(--business-blue-deep); }
+
+/* The funding logo in the printable report also has no background tile. */
+.report-credit img {
+  display: block;
+  width: 200px;
+  height: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+@media (max-width: 760px) {
+  .masthead .eu { width: 205px; max-width: 40vw; }
+}
+@media (max-width: 450px) {
+  .masthead .eu { width: 165px; max-width: 49vw; }
+}
 @media print {
   .primary, .action { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .report-credit img { width: 160px; height: auto; }
 }

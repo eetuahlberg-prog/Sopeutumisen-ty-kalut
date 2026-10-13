@@ -11,3 +11,15 @@
 **Huom.** Julkaisu ei tapahdu automaattisesti tätä ZIP-tiedostoa lataamalla. Yksikään GitHub-repositorio ei muutu, ennen kuin viet tiedostot sinne.
 
 Lisätiedot: [README.md](README.md). Julkaisun jälkeinen testaus: `TESTAUS.txt`.
+
+
+## Jos yrityksen yläpalkki näkyy edelleen punaisena
+
+Päivitä erityisesti `yritys/theme.css`, `yritys/style.css`, `yritys/index.html` ja `shared/tool-header.css`.
+Varmista GitHubin tiedostonäkymästä, että `yritys/theme.css` sisältää säännön
+`.masthead { background: #ADB150; }`. Koko ZIP-paketin sisällön lataaminen korvaa
+samannimiset tiedostot; pelkän ZIP-arkiston lataaminen GitHubiin ei julkaise sivua.
+
+Kun GitHub Actions -julkaisu on valmis, tarkista sivu uudestaan tai avaa se
+yksityisessä selainikkunassa. Päivitetty `yritys/index.html` lisää
+`?v=1.2.1` CSS-linkkeihin, jolloin selain hakee uudet tyylit.
