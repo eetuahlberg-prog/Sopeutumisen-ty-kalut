@@ -1,6 +1,6 @@
-/* Molempien työkalujen identtinen punainen ylätunniste.
-   Sama rakenne, korkeus, logoasettelu ja mobiilisäännöt. */
-.masthead { background:#e4003a; color:#fff; }
+/* Molempien työkalujen yhtenäinen ylätunniste: sama mitoitus ja rakenne.
+   Teemakohtaiset CSS-muuttujat ohjaavat vain värejä. */
+.masthead { background:var(--suite-header-bg, #e4003a); color:var(--suite-header-text, #fff); }
 .mastinner {
   max-width:1480px; min-height:160px; margin:0 auto;
   padding:13px 4%; display:flex; align-items:center;
@@ -8,19 +8,19 @@
 }
 .identity { display:flex; align-items:center; gap:35px; min-width:0; }
 .identity > img { display:block; width:278px; max-width:32vw; height:auto; object-fit:contain; }
-.product { border-left:1px solid #ff7699; padding:7px 0 7px 30px; min-width:0; }
-.product a { color:#fff; display:block; text-decoration:none; font-size:1.625rem; font-weight:700; line-height:1.2; }
+.product { border-left:1px solid var(--suite-header-divider, #ff7699); padding:7px 0 7px 30px; min-width:0; }
+.product a { color:var(--suite-header-text, #fff); display:block; text-decoration:none; font-size:1.625rem; font-weight:700; line-height:1.2; }
 .product span { display:block; margin-top:5px; font-size:.875rem; }
 .eu { display:block; width:116px; height:auto; flex-shrink:0; object-fit:contain; }
 
 /* Yrityksen arvio voidaan nollata mistä tahansa vaiheesta. */
 .suite-nav-actions { display:flex; align-items:center; justify-content:flex-end; gap:20px; flex-wrap:wrap; }
 .suite-reset {
-  background:#fff; border:1px solid #a5002b; border-radius:4px;
-  color:#a5002b; font:inherit; font-size:.88rem; font-weight:700;
+  background:#fff; border:1px solid var(--suite-reset-border, #a5002b); border-radius:4px;
+  color:var(--suite-reset-border, #a5002b); font:inherit; font-size:.88rem; font-weight:700;
   padding:8px 14px; min-height:40px; cursor:pointer;
 }
-.suite-reset:hover { background:#fff2f5; }
+.suite-reset:hover { background:var(--suite-reset-hover, #fff2f5); }
 .suite-reset:focus-visible { outline:3px solid #005d76; outline-offset:3px; }
 
 /* Yhteinen viimeinen huomautus footerissa ja tulosteessa. */

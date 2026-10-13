@@ -7,7 +7,7 @@
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; min-width: 300px; color: var(--ink); background: #f8f8f6; font: 1rem/1.55 Ubuntu, "Segoe UI", Arial, sans-serif; }
+body { margin: 0; min-width: 300px; color: var(--ink); background: #f8f8f6; font: 1rem/1.5 Corbel, "Segoe UI", Arial, sans-serif; }
 a { color: var(--red-dark); text-underline-offset: 4px; }
 a:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
 .skip-link { position: absolute; left: 16px; top: -120px; z-index: 20; padding: 13px 17px; color: var(--ink); background: #fff; font-weight: 700; }
@@ -65,6 +65,12 @@ h1 { max-width: 1000px; margin: 0 0 21px; font-size: clamp(2.8rem, 5.4vw, 4.7rem
 .card-action { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: auto; padding: 13px 0 15px; border-top: 1px solid #e4e6e4; color: var(--red-dark); font-weight: 700; font-size: .96rem; }
 .arrow { font-size: 1.5rem; line-height: 1; }
 .note { margin: 23px 0 0; color: #f7f7f7; max-width: 1010px; font-size: .83rem; line-height: 1.65; }
+
+/* Yritysten kortti ennakoi itse työkalun vihreää tehosteväriä. */
+.tool-card--business { border-top-color: #ADB150; }
+.tool-card--business .card-kind,
+.tool-card--business .card-icon,
+.tool-card--business .card-action { color: #4A541A; }
 
 /* Valkoinen alareuna ja punainen rajaus. */
 .site-footer { background: #fff; border-top: 6px solid var(--red); }

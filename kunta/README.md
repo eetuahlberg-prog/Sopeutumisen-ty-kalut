@@ -26,3 +26,8 @@ Vastaukset säilyvät vain avoimen sivun muistissa. Tallenna suunnitelma ennen s
 ## Yhteinen ylätunniste ja vastuuhuomautus
 
 Työkalu kuuluu yhteiseen Sopeutumisen työkalut -sivustoon. Ylätunnisteen mitoitus ja vastuuhuomautuksen ulkoasu on määritelty tiedostossa `../shared/tool-header.css`. Verkkosivun alatunniste sisältää hankkeen rahoituslausekkeen ja vastuuhuomautuksen.
+
+## Ulkoasu
+
+Fonttiperhe on **Corbel** (varafontit Segoe UI ja Arial). Fonttikoot
+tulevat yhteisestä `../shared/typography.css`-tiedostosta. Kuntien pääväri on punainen `#E4003A`.

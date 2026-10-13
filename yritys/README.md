@@ -29,3 +29,9 @@ Vastaukset säilyvät vain avoimen sivun muistissa. Tallenna toimintalista tai a
 ## Yhteinen ylätunniste ja vastuuhuomautus
 
 Työkalu kuuluu yhteiseen Sopeutumisen työkalut -sivustoon. Ylätunnisteen mitoitus ja vastuuhuomautuksen ulkoasu on määritelty tiedostossa `../shared/tool-header.css`. Verkkosivun alatunniste sisältää hankkeen rahoituslausekkeen ja vastuuhuomautuksen.
+
+## Ulkoasu
+
+Fonttiperhe on **Corbel** (varafontit Segoe UI ja Arial). Fonttikoot
+tulevat yhteisestä `../shared/typography.css`-tiedostosta. Yritysten pääväri on vihreä `#ADB150` (RGB 173, 177, 80).
+Erillinen `theme.css` sisältää vihreän käyttöliittymäteeman.
