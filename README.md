@@ -30,6 +30,8 @@ assets/                       Aloitussivun kuvat ja logot
 kunta/                        Kuntien työkalu (HTML, CSS, JS, aineisto)
 yritys/                       Yritysten työkalu (HTML, CSS, JS, aineisto, Excel-vienti)
 shared/tool-header.css         Molempien työkalujen yhteinen ylätunniste ja huomautustyylit
+shared/typography.css          Molempien työkalujen yhteiset fonttikoot
+yritys/theme.css               Yritysten vihreä väriteema
 yritys/research/              Yritystyökalun lähdeaineisto ja testit
 GITHUB-JULKAISUOHJE.md        GitHub Pages -julkaisuohje
 TESTAUS.txt                   Julkaisun jälkeinen tarkistuslista
@@ -53,3 +55,25 @@ Sivusto on toteutettu Pohjois-Karjalan maakuntaliiton **Ilmastovisio – Uutta k
 ## Vastuunrajaus
 
 Työkalu on tarkoitettu alustavan arvioinnin ja suunnittelun tueksi. Sisältö ja toimenpide-ehdotukset voivat sisältää virheitä tai puutteita, eivätkä ne korvaa asiantuntija-arviota. Käyttäjän tulee tarkistaa tietojen ajantasaisuus ja ehdotusten soveltuvuus ennen päätöksentekoa. Pohjois-Karjalan maakuntaliitto ei vastaa työkalun käyttöön perustuvien päätösten seurauksista lain sallimissa rajoissa.
+
+## Ulkoasu ja typografia
+
+Kaikilla kolmella sivulla on ensisijaisena fonttina **Corbel**. Sitä käytetään
+käyttäjän laitteelta; Corbel-fonttitiedostoja ei jaella sivuston mukana. Jos
+fonttia ei ole asennettu, selain käyttää Segoe UI-, Arial- tai muuta
+järjestelmäfonttia. Kuntien ja yritysten työkalut käyttävät samaa
+`shared/typography.css`-tiedostossa määriteltyä typografista asteikkoa
+(leipäteksti, pääotsikot, väliotsikot, kysymystekstit ja valikot).
+
+- Kuntien työkalun pääväri: Pohjois-Karjalan punainen `#E4003A`.
+- Yritysten työkalun pääväri: vihreä `#ADB150`, RGB 173, 177, 80;
+  annettu painovärimääritys CMYK 40/20/80/0 ja PMS 618 C. Näyttökäytössä
+  käytetään nimenomaan annettua RGB/HEX-arvoa.
+- Yritystyökalun pienissä teksteissä ja aktiivisissa valinnoissa käytetään
+  tummempaa vihreää, jotta tekstin ja käyttöliittymäelementtien kontrasti
+  säilyy. Yläpalkkien mitat ovat samat molemmissa työkaluissa.
+
+Yhteiset fonttikoot määritellään tiedostossa `shared/typography.css` ja
+yläpalkkien rakenne `shared/tool-header.css`-tiedostossa. Yritystyökalun
+väriteema on erillisessä `yritys/theme.css`-tiedostossa. Näihin tiedostoihin
+tehdyt muutokset heijastuvat työkaluun sivuston uudelleenjulkaisun jälkeen.
