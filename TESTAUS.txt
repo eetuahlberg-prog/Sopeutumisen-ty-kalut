@@ -12,7 +12,8 @@ Tarkista julkaisun jälkeen:
 8. Tallenna keskeneräinen arvio ennen poistumista: vastauksia ei tallenneta pysyvästi.
 9. EU-tunnus on aloitussivulla havaittavissa vähintään muiden tunnusten
    veroisena (tarkista sekä leveä että kapea näyttö).
-10. Molempien työkalujen punaiset ylätunnisteet ovat yhtä korkeat.
+10. Molempien työkalujen ylätunnisteet ovat yhtä korkeat; kunnilla punainen
+    ja yrityksillä vihreä RGB 173, 177, 80 (#ADB150).
 11. Yritystyökalussa vaihda toimialaa kahdesti: ehdotetut riippuvuudet
     vaihtuvat, jos et ole muokannut niitä; omat muutokset säilyvät.
 12. Palauta toimialan ehdotukset painikkeesta ja varmista, että riippuvuudet
@@ -22,3 +23,18 @@ Tarkista julkaisun jälkeen:
 14. Kuntatyökalussa näkyy nimi "Kuntien sopeutuminen" otsikossa ja alareunassa.
 15. Molempien työkalujen lopusta löytyy sama rahoituslauseke ja huomautus.
 16. Tarkista myös TXT-/Excel-/PDF-tulosteiden vastuuhuomautukset.
+17. Tarkista, että Corbel on ensisijainen fontti aloitussivulla ja molemmissa
+    työkaluissa; tarkista Windowsissa myös todellinen fontin renderöinti.
+18. Vertaa kuntien ja yritysten työkalujen leipätekstin, pääotsikon,
+    väliotsikoiden, kysymystekstien ja välilehtien fonttikokoja.
+19. Yritystyökalun painikkeissa, valituissa riippuvuuksissa, navigoinnissa
+    ja vientiraportin korostuksissa ei saa näkyä aiempaa punaista teemaa.
+20. Tarkista yritysten vaaleanvihreiden painikkeiden tumma teksti ja EU:n
+    sekä Pohjois-Karjalan valkoisten tunnusten näkyminen ylätunnisteessa.
+
+Viimeisimmän päivityksen tarkistukset:
+- Yritystyökalun automaattitestit (18 kysymystä, 26 toimenpidettä,
+  toimialanvaihto ja viennit): läpäisty.
+- CSS:n ja paikallisten tiedostopolkujen rakennetarkistus: läpäisty.
+- Selainpohjainen visuaalinen tarkistus: tehtävä julkaisuympäristössä;
+  testiympäristön selain esti paikallisten osoitteiden avaamisen.
